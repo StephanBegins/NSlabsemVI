@@ -22,7 +22,7 @@ def encrypt_message(key, plaintext):
     # Encrypt the padded data
     ciphertext = encryptor.update(padded_data) + encryptor.finalize()
 
-    return iv + ciphertext  # Return IV + ciphertext
+    return iv + ciphertext  # Return IV + cipher
 
 
 # Function to decrypt ciphertext
